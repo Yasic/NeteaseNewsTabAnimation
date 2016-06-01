@@ -15,7 +15,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -79,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements onAllTabsListener
         rvAll.setAdapter(allTabsAdapter);
         rvChoose.setAdapter(chooseTabAdapter);
 
-        MyItemTouchHHelperCallback callback = new MyItemTouchHHelperCallback(chooseTabAdapter);
+        MyItemTouchHelperCallback callback = new MyItemTouchHelperCallback(chooseTabAdapter);
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(callback);
         itemTouchHelper.attachToRecyclerView(rvChoose);
     }

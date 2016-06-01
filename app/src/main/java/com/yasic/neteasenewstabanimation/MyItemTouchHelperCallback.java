@@ -6,10 +6,10 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 /**
  * Created by Yasic on 2016/5/30.
  */
-public class MyItemTouchHHelperCallback extends ItemTouchHelper.Callback {
+public class MyItemTouchHelperCallback extends ItemTouchHelper.Callback {
     private onMoveAndSwipeListener onMoveAndSwipeListener;
 
-    public MyItemTouchHHelperCallback(onMoveAndSwipeListener onMoveAndSwipeListener){
+    public MyItemTouchHelperCallback(onMoveAndSwipeListener onMoveAndSwipeListener){
         this.onMoveAndSwipeListener = onMoveAndSwipeListener;
     }
 
